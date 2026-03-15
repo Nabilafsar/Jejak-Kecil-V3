@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Manajemen Kursus Jejak Kecil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-[Montserrat] flex min-h-screen bg-[#eef0f7]">
+    <aside id="sidebar" class="bg-[#1a2668] w-72 transition-all duration-300 flex flex-col">
+      <div class="flex items-center justify-between py-10 px-8">
+        <h1 id="logoText" class="text-2xl font-extrabold text-white">Jejak Kecil</h1>
+        <button onclick="toggleSidebar()" class="w-14 h-14 flex items-center justify-center rounded-lg hover:bg-white/10 transition">
+          <img src="../src/img/grid-layout-side-outline.png" class="w-10 h-10 object-contain">
+        </button>
+      </div>
+
+      <nav id="menuList" class="flex flex-col gap-3 px-4 mt-8">
+        <a href="dashboard.html" class="menu-item flex items-center gap-3 px-[20px] py-[18px] text-[#c5cae9] rounded-[15px] hover:bg-white/10 hover:text-white hover:rounded-l-[30px] hover:mr-[-20px] transition-all duration-200">
+          <div class="w-7 h-7 flex items-center justify-center flex-shrink-0">
+              <img src="../src/img/dashbord icon.png" class="w-full h-full object-contain">
+          </div>
+          <span class="menu-text font-medium">Dashboard</span>
+        </a>
+
+        <a href="manajemenUser.html" class="menu-item flex items-center gap-3 px-[20px] py-[18px] text-[#c5cae9] rounded-[15px] hover:bg-white/10 hover:text-white hover:rounded-l-[30px] hover:mr-[-20px] transition-all duration-200">
+          <div class="w-7 h-7 flex items-center justify-center flex-shrink-0">
+              <img src="../src/img/manajemen akun icon.png" class="w-full h-full object-contain">
+          </div>
+          <span class="menu-text font-medium">Manajemen User</span>
+        </a>
+
+        <a href="manajemenKursus.html" class="menu-item flex items-center gap-3 relative px-[15px] py-[13px] text-[#1a2668] bg-[#eef0f7] rounded-l-[40px] mr-[-20px]">
+          <img src="../src/img/manajemen kursus icon aktif.png" class="w-10 h-10">
+          <span class="menu-text font-semibold">Manajemen Kursus</span>
+          <span class="absolute top-[-20px] right-1 w-[25px] h-[20px] bg-[#1a2668] rounded-br-[20px] shadow-[4px_4px_0_4px_#eef0f7]"></span>
+          <span class="absolute bottom-[-20px] right-1 w-[25px] h-[20px] bg-[#1a2668] rounded-tr-[20px] shadow-[4px_-4px_0_4px_#eef0f7]"></span>
+        </a>
+
+        <a href="" class="menu-item flex items-center gap-3 px-[20px] py-[18px] text-[#c5cae9] rounded-[15px] hover:bg-white/10 hover:text-white hover:rounded-l-[30px] hover:mr-[-20px] transition-all duration-200">
+          <div class="w-7 h-7 flex items-center justify-center flex-shrink-0">
+              <img src="../src/img/manajemen akun icon.png" class="w-full h-full object-contain">
+          </div>
+          <span class="menu-text font-medium">Manajemen Quiz</span>
+        </a>
+
+        <a href="" class="menu-item flex items-center gap-3 px-[20px] py-[18px] text-[#c5cae9] rounded-[15px] hover:bg-white/10 hover:text-white hover:rounded-l-[30px] hover:mr-[-20px] transition-all duration-200">
+          <div class="w-7 h-7 flex items-center justify-center flex-shrink-0">
+              <img src="../src/img/laporan icon.png" class="w-full h-full object-contain">
+          </div>
+          <span class="menu-text font-medium">Laporan</span>
+        </a>
+
+        <a href="" class="menu-item flex items-center gap-3 px-[20px] py-[18px] text-[#c5cae9] rounded-[15px] hover:bg-white/10 hover:text-white hover:rounded-l-[30px] hover:mr-[-20px] transition-all duration-200">
+          <div class="w-7 h-7 flex items-center justify-center flex-shrink-0">
+              <img src="../src/img/pengaturan icon.png" class="w-full h-full object-contain">
+          </div>
+          <span class="menu-text font-medium">Pengaturan</span>
+        </a>
+      </nav>
+    </aside>
+
+    <script src="js/manajemenKursus.js"></script>
+
+</body>
+</html>
